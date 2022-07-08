@@ -2,7 +2,11 @@
 ## Install Jenkins (Stable) in CentOS
 ```
 sudo yum upgrade
-sudo yum install wget git -y 
+sudo yum install epel-release vim wget ntp git -y 
+systemctl stop firewalld
+systemctl disable firewalld
+ntpdate pool.ntp.org
+
 sudo wget -O /etc/yum.repos.d/jenkins.repo   https://pkg.jenkins.io/redhat-stable/jenkins.repo
 sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
 sudo yum upgrade -y
