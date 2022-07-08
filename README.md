@@ -1,5 +1,5 @@
 # jenkinslab
-
+```
 sudo yum upgrade
 sudo yum install wget git -y 
 sudo wget -O /etc/yum.repos.d/jenkins.repo   https://pkg.jenkins.io/redhat-stable/jenkins.repo
@@ -14,3 +14,4 @@ sudo systemctl start jenkins
 sudo systemctl status jenkins
 cat /etc/passwd | grep jenkins
 cat /var/lib/jenkins/secrets/initialAdminPassword > /tmp/initialAdminPassword
+```
