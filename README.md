@@ -1,5 +1,5 @@
 # jenkinslab
-## Install Jenkins in CentOS
+## Install Jenkins (Stable) in CentOS
 ```
 sudo yum upgrade
 sudo yum install wget git -y 
